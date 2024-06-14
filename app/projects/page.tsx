@@ -1,4 +1,5 @@
 'use client';
+import React from 'react'
 import { useEffect, useState } from 'react';
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { Octokit } from "@octokit/core";
@@ -33,8 +34,6 @@ const Projects = () => {
     description: repo.description || "No description provided",
     link: repo.html_url
   }));
-
-  console.log(transformedProjects)
   return (
     <div className="max-w-5xl mx-auto px-8">
       <HoverEffect items={transformedProjects} />

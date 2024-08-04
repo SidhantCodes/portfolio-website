@@ -10,20 +10,25 @@ export const navlinks = [
     {
         name: 'Blogs',
         url: '/blogs'
-    }
+    },
+    
 ]
 
 export const socials = [
     {
-        name: 'github',
+        name: 'GitHub',
         url: 'https://github.com/SidhantCodes'
     },
     {
-        name: 'linkedin',
+        name: 'LinkedIn',
         url: 'https://www.linkedin.com/in/smishra0110/'
     },
     {
-        name: 'email',
+        name: 'Email',
         url: 'mailto:mishrasidhant01@gmail.com'
+    },
+    {
+        name: 'Resume',
+        url: 'https://drive.google.com/file/d/1mZSmYJHcgXVN_ZHURPOF-HxGfZWF0YDX/view?usp=sharing'
     }
 ]

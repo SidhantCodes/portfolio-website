@@ -29,6 +29,6 @@ export const socials = [
     },
     {
         name: 'Resume',
-        url: 'https://drive.google.com/file/d/1mZSmYJHcgXVN_ZHURPOF-HxGfZWF0YDX/view?usp=sharing'
+        url: 'https://drive.google.com/file/d/1q75a6Eca1GgOxlsoGZv_n2YSniZ5ICJC/view?usp=sharing'
     }
 ]

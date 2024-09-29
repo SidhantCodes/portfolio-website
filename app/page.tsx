@@ -1,23 +1,3 @@
-// "use client"
-// import { Hero } from "@/components"
-
-// const Home = () => {
-//   return (
-//     <div className="overflow-hidden">
-//         <Hero />
-//         <ul className="px-6 list-disc pt-5 sm:p-10 space-y-4 text-neutral-600 dark:text-neutral-200 text-md sm:text-base ">
-//         <li>Pre-Final Year, pursuing B.Tech in Information Technology at Vellore Institute of Technology</li>
-//         <li>NextJs Enthusiast & Full Stack Developer</li>
-//         <li>Data Science Aficionado</li>
-//         <li>Currently learning about Generative AI and working with Large Language Models</li>
-//         <li>Proactively learning cloud computing.</li>
-//         <li>English, हिन्दी, Français, Español</li>
-//       </ul>
-//     </div>
-//   )
-// }
-
-// export default Home
 
 "use client"
 import { Hero } from "@/components"
@@ -39,7 +19,7 @@ const Home = () => {
     },
     {
       icon: <FaRobot />,
-      text: "Currently learning about Generative AI and working with Large Language Models"
+      text: "Currently learning about Generative AI and Computer Vision"
     },
     {
       icon: <FaCloud />,

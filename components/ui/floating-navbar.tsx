@@ -40,8 +40,6 @@ export const FloatingNav = ({
       }
     }
   });
-  const resumeLink = process.env.NEXT_PUBLIC_RESUME_LINK || "#";
-
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -73,7 +71,7 @@ export const FloatingNav = ({
             <span className="hidden sm:block text-sm">{navItem.name}</span>
           </Link>
         ))}
-        <Link href={resumeLink} target="_blank" rel="noopener noreferrer">
+        <Link href="https://drive.google.com/file/d/1UZNxVuDbUtnHr-g8cg9u9ef1LKD5JhpO/view?usp=sharing" target="_blank" rel="noopener noreferrer">
           <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
             <span>Resume</span>
             <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px h-px" />

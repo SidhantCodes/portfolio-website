@@ -1,31 +1,15 @@
-import Image from "next/image";
-import Link from "next/link";
-import { TypewriterEffect } from "./ui/typewriter-effect"
-
+import { BackgroundGradientAnimation } from "./ui/background-gradient-animation";
 const Hero = () => {
-  const words = [
-    {
-      text: "Hi",
-      className: "text-[44px] sm:text-[65px]",
-    },
-    {
-      text: "I'm",
-      className: "text-[44px] sm:text-[65px]",
-    },
-    {
-      text: "Sidhant",
-      className: "text-[44px] sm:text-[65px]",
-    },
-    {
-      text: "Mishra",
-
-      className: "text-blue-700 dark:text-blue-700 text-[44px] sm:text-[65px]",
-    },
-  ];
   return (
 
-    <div className="flex flex-col items-center justify-center h-80 -m-20">
-      <TypewriterEffect words={words} />
+    <div className="flex flex-col items-center justify-center h-screen">
+      <BackgroundGradientAnimation>
+      <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl">
+        <p className="bg-clip-text text-transparent text-6xl lg:text-9xl drop-shadow-2xl text-white">
+          Sidhant Mishra
+        </p>
+      </div>
+      </BackgroundGradientAnimation>
     </div>
 
   )

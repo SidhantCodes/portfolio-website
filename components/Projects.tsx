@@ -2,6 +2,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
 import { HoverEffect } from "@/components/ui/card-hover-effect";
+import Heading from './Heading';
 
 const Projects = () => {
   const [repositories, setRepositories] = useState<any[]>([]);
@@ -30,7 +31,9 @@ const Projects = () => {
   }));
 
   return (
-    <div className="max-w-5xl mx-auto px-8">
+    
+    <div className="max-w-5xl mx-auto px-8" id='projects'>
+      <Heading />
       <HoverEffect items={transformedProjects} />
     </div>
   );

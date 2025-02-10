@@ -1,47 +1,38 @@
 
 "use client"
-import { Hero } from "@/components"
-import { FaCode, FaCloud, FaLanguage, FaLaptopCode, FaBrain, FaRobot} from 'react-icons/fa'
-
+import { Hero, Projects, Paragraph } from "@/components"
+import { aboutme } from "@/constants"
+import { FloatingNav } from "@/components/ui/floating-navbar"
+import { IconHome, IconMessage, IconCode } from "@tabler/icons-react";
 const Home = () => {
-  const items = [
+  const navItems = [
     {
-      icon: <FaLaptopCode />,
-      text: "Pre-Final Year, pursuing B.Tech in Information Technology at Vellore Institute of Technology"
+      name: "About Me",
+      link: "/",
+      icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
-      icon: <FaCode />,
-      text: "NextJs Enthusiast & Full Stack Developer"
+      name: "Projects",
+      link: "#projects",
+      icon: <IconCode className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
-      icon: <FaBrain />,
-      text: "Data Science Aficionado"
+      name: "Blogs",
+      link: "https://medium.com/@mishrasidhant01",
+      icon: (
+        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+      ),
     },
-    {
-      icon: <FaRobot />,
-      text: "Currently learning about Generative AI and Computer Vision"
-    },
-    {
-      icon: <FaCloud />,
-      text: "Proactively learning cloud computing."
-    },
-    {
-      icon: <FaLanguage />,
-      text: "English, हिन्दी, Français, Español"
-    }
-  ]
-
+    
+  ];
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden relative w-full">
+      <FloatingNav navItems={navItems} />
       <Hero />
-      <div className="px-6 pt-5 sm:p-10 space-y-4">
-        {items.map((item, index) => (
-          <div key={index} className="flex items-center space-x-4 p-1 rounded-md shadow-md">
-            {item.icon}
-            <span className="text-neutral-600 dark:text-neutral-200 text-md sm:text-base">{item.text}</span>
-          </div>
-        ))}
+      <div className="flex items-center justify-center mx-20 my-20">
+        <Paragraph para={aboutme} />
       </div>
+      <Projects />
     </div>
   )
 }

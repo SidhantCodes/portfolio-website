@@ -10,13 +10,15 @@
   },
   "dependencies": {
     "@octokit/core": "^6.1.2",
+    "@tabler/icons-react": "^3.30.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.10",
+    "motion": "^12.4.1",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.2.1",
-    "tailwind-merge": "^2.3.0"
+    "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
     "@types/node": "^20",

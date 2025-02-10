@@ -1,8 +1,10 @@
-import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Socials from "./Socials";
+import Projects from "./Projects";
+import Paragraph from "./Paragraph";
 export {
-    Navbar,
     Hero,
-    Socials
+    Socials,
+    Projects,
+    Paragraph
 }

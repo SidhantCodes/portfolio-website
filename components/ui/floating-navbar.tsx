@@ -40,8 +40,9 @@ export const FloatingNav = ({
       }
     }
   });
-  const resumeLink = process.env.NEXT_PUBLIC_RESUME_LINK || "#";
 
+  const resumeLink = process.env.NEXT_PUBLIC_RESUME_LINK
+  // console.log(resumeLink)
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -61,9 +62,9 @@ export const FloatingNav = ({
           className
         )}
       >
-        {navItems.map((navItem: any, idx: number) => (
+        {navItems.map((navItem: any) => (
           <Link
-            key={`link=${idx}`}
+            key={navItem.link}
             href={navItem.link}
             className={cn(
               "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
@@ -73,7 +74,7 @@ export const FloatingNav = ({
             <span className="hidden sm:block text-sm">{navItem.name}</span>
           </Link>
         ))}
-        <Link href={resumeLink} target="_blank" rel="noopener noreferrer">
+        <Link href={resumeLink!} target="_blank" rel="noopener noreferrer">
           <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
             <span>Resume</span>
             <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px h-px" />

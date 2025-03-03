@@ -24,9 +24,11 @@ const Projects = () => {
     fetchRepositories();
   }, []);
 
-  const transformedProjects = repositories.map(repo => ({
+  const transformedProjects = repositories
+  .filter(repo => repo.html_url !== "https://github.com/SidhantCodes/SidhantCodes")
+  .map(repo => ({
     title: repo.name,
-    description: repo.description || "No description provided",
+    description: repo.description || "Please check the GitHub repository for more details.",
     link: repo.html_url
   }));
 

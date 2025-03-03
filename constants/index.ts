@@ -17,15 +17,18 @@ export const navlinks = [
 export const socials = [
     {
         name: 'GitHub',
-        url: 'https://github.com/SidhantCodes'
+        url: 'https://github.com/SidhantCodes',
+        key: 'github'
     },
     {
         name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/smishra0110/'
+        url: 'https://www.linkedin.com/in/smishra0110/',
+        key: 'linkedin'
     },
     {
         name: 'Email',
-        url: 'mailto:mishrasidhant01@gmail.com'
+        url: 'mailto:mishrasidhant01@gmail.com',
+        key: 'email'
     },
     // {
     //     name: 'Resume',

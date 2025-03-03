@@ -6,6 +6,7 @@ export const revalidate = 3600;
 
 export async function GET() {
   const token = process.env.NEXT_PUBLIC_GITHUB_API_TOKEN;
+  // console.log(token)
   const octokit = new Octokit({
     auth: token
   });

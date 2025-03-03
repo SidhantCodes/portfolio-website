@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
-import { Navbar, Socials } from "@/components";
+import { Socials } from "@/components";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -18,7 +18,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={outfit.className}>
-        {/* <Navbar /> */}
         {children}
         <Socials />
       </body>

@@ -25,7 +25,10 @@ const Projects = () => {
   }, []);
 
   const transformedProjects = repositories
-  .filter(repo => repo.html_url !== "https://github.com/SidhantCodes/SidhantCodes")
+  .filter(repo => repo.html_url !== "https://github.com/SidhantCodes/SidhantCodes"
+    &&
+      repo.html_url !== "https://github.com/SidhantCodes/Course-Project_BITE401L-Network_and_Information_Security-C2-TC2-ASWANI_KUMAR_CHERUKURI"
+  )
   .map(repo => ({
     title: repo.name,
     description: repo.description || "Please check the GitHub repository for more details.",

@@ -1,4 +1,5 @@
 import { BackgroundGradientAnimation } from "./ui/background-gradient-animation";
+import BorderMagicButton from "./ui/border-magic-button";
 const Hero = () => {
   return (
 
@@ -10,6 +11,7 @@ const Hero = () => {
         </p>
       </div>
       </BackgroundGradientAnimation>
+      <BorderMagicButton />
     </div>
 
   )

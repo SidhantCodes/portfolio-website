@@ -29,7 +29,7 @@ const Home = () => {
     <div className="overflow-hidden relative w-full">
       <FloatingNav navItems={navItems} />
       <Hero />
-      <div className="flex items-center justify-center mx-20 my-20">
+      <div id="aboutme" className="flex items-center justify-center mx-20 my-20">
         <Paragraph para={aboutme} />
       </div>
       <Projects />

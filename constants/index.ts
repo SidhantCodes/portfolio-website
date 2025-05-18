@@ -1,15 +1,19 @@
 export const navlinks = [
     {
         name: 'Home',
-        url: '/'
+        url: 'home'
+    },
+    {
+        name: 'About',
+        url: 'about'
     },
     {
         name: 'Projects',
-        url: '/projects'
+        url: 'projects'
     },
     {
         name: 'Blogs',
-        url: '/blogs'
+        url: 'https://medium.com/@mishrasidhant01'
     },
     
 ]
@@ -30,11 +34,17 @@ export const socials = [
         url: 'mailto:mishrasidhant01@gmail.com',
         key: 'email'
     },
-    // {
-    //     name: 'Resume',
-    //     url: 'https://drive.google.com/file/d/1UZNxVuDbUtnHr-g8cg9u9ef1LKD5JhpO/view?usp=sharing'
-    // }
+    {
+        name: 'LeetCode',
+        url: 'https://leetcode.com/u/mishrasidhant01/',
+        key: 'leetcode',
+    },
+    {
+        name: 'Resume',
+        key: 'resume',
+        url: 'https://drive.google.com/file/d/1x3j-7mDhmBBbeie99EatXHQpGy08WeQ8/view?usp=sharing'
+    }
 ]
 
 
-export const aboutme = "I am a pre-final year B.Tech student in Information Technology at Vellore Institute of Technology, passionate about Next.js and frontend development. With a keen interest in data science, AI, computer vision, and cloud technologies, I am constantly exploring and expanding my skills. Currently diving deeper into cloud computing, I love building and learning new things. Fluent in English, हिन्दी, Français, and Español, I enjoy connecting with diverse communities and embracing new challenges."
+export const aboutme = "I'm a pre-final year B.Tech IT student at VIT, passionate about Next.js and frontend development. I'm exploring cloud computing while also diving into data science and AI. I enjoy building projects, learning new technologies, and connecting with global communities—fluent in English, हिन्दी, Français, and Español."

@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Heading = () => {
+const Heading = ({ head } : { head: string }) => {
   return (
-    <h1 className='py-10 text-center text-6xl font-extrabold lg:text-8xl'>
-        Projects
+    <h1 className='py-10 text-center text-5xl font-extrabold sm:text-7xl'>
+        {head}
     </h1>
   )
 }

@@ -38,7 +38,7 @@ const Projects = () => {
   return (
     
     <div id="projects" className="max-w-5xl mx-auto px-8">
-      <Heading />
+      <Heading head={`Projects`}/>
       <HoverEffect items={transformedProjects} />
     </div>
   );

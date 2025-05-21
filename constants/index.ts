@@ -8,14 +8,13 @@ export const navlinks = [
         url: 'about'
     },
     {
-        name: 'Projects',
-        url: 'projects'
+        name: 'WorkEx',
+        url: 'workex'
     },
     {
-        name: 'Blogs',
-        url: 'https://medium.com/@mishrasidhant01'
-    },
-    
+        name: 'Projects',
+        url: 'projects'
+    },    
 ]
 
 export const socials = [
@@ -38,6 +37,10 @@ export const socials = [
         name: 'LeetCode',
         url: 'https://leetcode.com/u/mishrasidhant01/',
         key: 'leetcode',
+    },
+    {
+        name: 'Blogs',
+        url: 'https://medium.com/@mishrasidhant01'
     },
     {
         name: 'Resume',

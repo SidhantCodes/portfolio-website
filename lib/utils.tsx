@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaFileAlt } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaFileAlt, FaMedium } from 'react-icons/fa'
 import { SiLeetcode } from 'react-icons/si'
 import { IoMdMail } from 'react-icons/io'
 
@@ -21,6 +21,8 @@ export const renderIcon = (name: string, className: string) => {
             return <SiLeetcode className={className} />
         case 'resume':
             return <FaFileAlt className={className} />
+        case 'blogs':
+            return <FaMedium className={className} />
         default:
             return null
         }

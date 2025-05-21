@@ -40,7 +40,8 @@ export const socials = [
     },
     {
         name: 'Blogs',
-        url: 'https://medium.com/@mishrasidhant01'
+        url: 'https://medium.com/@mishrasidhant01',
+        key: 'blogs'
     },
     {
         name: 'Resume',

@@ -15,17 +15,17 @@ interface ProjectCardProps {
 export function ProjectCard({ title, desc, image, livelink, repolink }: ProjectCardProps) {
   return (
     <CardContainer className="inter-var">
-      <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-purple-400/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+      <CardBody className="relative group/card  hover:shadow-2xl hover:shadow-purple-400/[0.1] bg-black  border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
-          className="text-xl font-bold text-neutral-600 dark:text-white"
+          className="text-xl font-bold text-white"
         >
           {title}
         </CardItem>
         <CardItem
           as="p"
           translateZ="60"
-          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+          className="text-sm max-w-sm mt-2 text-neutral-300"
         >
           {desc}
         </CardItem>
@@ -43,14 +43,14 @@ export function ProjectCard({ title, desc, image, livelink, repolink }: ProjectC
             <Link
               href={livelink}
               target="_blank"
-              className="linkTranslateZ px-4 py-2 rounded-xl text-xs font-normal dark:text-white hover:opacity-80"
+              className="linkTranslateZ px-4 py-2 rounded-xl text-xs font-normal text-white hover:opacity-80"
             >
               Live URL
             </Link>
           ) : (
             <button
               disabled
-              className="linkTranslateZ px-4 py-2 rounded-xl text-xs font-normal dark:text-white opacity-50 cursor-not-allowed"
+              className="linkTranslateZ px-4 py-2 rounded-xl text-xs font-normal text-white opacity-50 cursor-not-allowed"
             >
               Live URL
             </button>
@@ -60,14 +60,14 @@ export function ProjectCard({ title, desc, image, livelink, repolink }: ProjectC
             <Link
               href={repolink}
               target="_blank"
-              className="linkTranslateZ px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold hover:opacity-80"
+              className="linkTranslateZ px-4 py-2 rounded-xl bg-white text-black text-xs font-bold hover:opacity-80"
             >
               GitHub
             </Link>
           ) : (
             <button
               disabled
-              className="linkTranslateZ px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold opacity-50 cursor-not-allowed"
+              className="linkTranslateZ px-4 py-2 rounded-xl bg-white text-black  text-xs font-bold opacity-50 cursor-not-allowed"
             >
               GitHub
             </button>

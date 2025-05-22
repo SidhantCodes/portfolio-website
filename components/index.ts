@@ -1,10 +1,12 @@
 import Hero from "./Hero";
 import Socials from "./Socials";
-import Projects from "./Projects";
 import Paragraph from "./Paragraph";
+import ProjectGrid from "./ProjectGrid";
+import { WorkExp } from "./WorkExp";
 export {
     Hero,
     Socials,
-    Projects,
-    Paragraph
+    Paragraph,
+    ProjectGrid,
+    WorkExp,
 }

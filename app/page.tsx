@@ -1,10 +1,7 @@
 
 "use client"
-import { Hero, Projects, Paragraph } from "@/components"
-import ProjectGrid from "@/components/ProjectGrid";
-import { WorkExp } from "@/components/WorkExp";
+import { Hero, Paragraph, ProjectGrid, WorkExp } from "@/components"
 import { aboutme } from "@/constants"
-import { IconHome, IconMessage, IconCode } from "@tabler/icons-react";
 const Home = () => {
     return (
     <div className="overflow-hidden relative w-full">
@@ -13,7 +10,6 @@ const Home = () => {
         <Paragraph para={aboutme} />
       </div>
       <WorkExp />
-      {/* <Projects /> */}
       <ProjectGrid />
     </div>
   )

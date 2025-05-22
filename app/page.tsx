@@ -1,6 +1,7 @@
 
 "use client"
 import { Hero, Projects, Paragraph } from "@/components"
+import ProjectGrid from "@/components/ProjectGrid";
 import { WorkExp } from "@/components/WorkExp";
 import { aboutme } from "@/constants"
 import { IconHome, IconMessage, IconCode } from "@tabler/icons-react";
@@ -12,7 +13,8 @@ const Home = () => {
         <Paragraph para={aboutme} />
       </div>
       <WorkExp />
-      <Projects />
+      {/* <Projects /> */}
+      <ProjectGrid />
     </div>
   )
 }

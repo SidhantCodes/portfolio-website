@@ -21,3 +21,6 @@
 html {
   scroll-behavior: smooth;
 }
+.linkTranslateZ {
+  transform: translateZ(20);
+}

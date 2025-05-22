@@ -50,5 +50,51 @@ export const socials = [
     }
 ]
 
+export const projects = [
+    {
+        title: "paintnclick",
+        desc: "Next.js PWA using Spotify, Dropbox, Gemini APIs for HD wallpapers and personality insights.",
+        image: "/images/pnc.svg",
+        livelink: "https://www.paintnclick.art/",
+        repolink: "none"
+    },
+    {
+        title: "encrypted-traffic-analysis-pi-5",
+        desc: "Lightweight Models for Encrypted Traffic Analysis on Edge Devices: Optimized Deployment on Raspberry Pi 5.",
+        image: "/images/pi5.svg",
+        livelink: "none",
+        repolink: "https://github.com/SidhantCodes/encrypted-traffic-analysis-pi-5"
+    },
+    {
+        title: "imgify",
+        desc: "Transform your imagination into stunning visuals and reality with Imgify.",
+        image: "/images/imgify.svg",
+        livelink: "https://imgify-sidhant.vercel.app/",
+        repolink: "https://github.com/SidhantCodes/imgify"
+    },
+    {
+        title: "QueryDojo",
+        desc: "Context-aware QA chatbot using Azure OpenAI, LangChain, memory, multimodal input.",
+        image: "/images/query.svg",
+        livelink: "none",
+        repolink: "https://github.com/SidhantCodes/QueryDojo"
+    },
+    {
+        title: "create-fullstack-app",
+        desc: "npx @sidhantcodes/create-fullstack-app@latest <PROJECT_NAME>",
+        image: "/images/cfa.svg",
+        livelink: "https://www.npmjs.com/package/@sidhantcodes/create-fullstack-app",
+        repolink: "https://github.com/SidhantCodes/create-fullstack-app"
+    },
+    {
+        title: "portfolio-website",
+        desc: "Personal portfolio website showcasing projects, skills, and contact information.",
+        image: "/images/portfolio.svg",
+        livelink: "https://www.sidhantmishra.tech/",
+        repolink: "https://github.com/SidhantCodes/portfolio-website"
+    },
+]
+
+
 
 export const aboutme = "I'm a pre-final year B.Tech IT student at VIT, passionate about Next.js and frontend development. I'm exploring cloud computing while also diving into data science and AI. I enjoy building projects, learning new technologies, and connecting with global communities—fluent in English, हिन्दी, Français, and Español."

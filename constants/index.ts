@@ -87,11 +87,18 @@ export const projects = [
         repolink: "https://github.com/SidhantCodes/create-fullstack-app"
     },
     {
-        title: "portfolio-website",
-        desc: "Personal portfolio website showcasing projects, skills, and contact information.",
-        image: "/images/portfolio.svg",
-        livelink: "https://www.sidhantmishra.tech/",
-        repolink: "https://github.com/SidhantCodes/portfolio-website"
+        title: "create-fullstack-app",
+        desc: "npx @sidhantcodes/create-fullstack-app@latest <PROJECT_NAME>",
+        image: "/images/cfa.svg",
+        livelink: "https://www.npmjs.com/package/@sidhantcodes/create-fullstack-app",
+        repolink: "https://github.com/SidhantCodes/create-fullstack-app"
+    },
+    {
+        title: "auto-insta-bot",
+        desc: "Instagram bot that processes images, auto-posts and sends DMs built with python",
+        image: "/images/auto-insta-bot.svg",
+        livelink: "none",
+        repolink: "https://github.com/SidhantCodes/auto-insta"
     },
 ]
 

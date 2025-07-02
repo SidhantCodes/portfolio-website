@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { navlinks, socials } from '@/constants'
-import { renderIcon, scrollToSection } from '@/lib/utils'
+import { renderIcon, scrollToSection } from '@/lib/utilities'
 
 export default function Hamburger() {
   const [isOpen, setIsOpen] = useState(false)

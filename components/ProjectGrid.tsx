@@ -8,8 +8,9 @@ const ProjectGrid = () => {
     <div id="projects" className="max-w-5xl mx-auto px-8 flex-col">
       <Heading head={`Projects`}/>
       <div className="grid sm:grid-cols-2 sm:gap-x-16">
-        {projects.map(project => (
+        {projects.map((project, index) => (
           <ProjectCard 
+            key={`${project.title}-${index}`}
             title={project.title}
             desc={project.desc}
             image={project.image}

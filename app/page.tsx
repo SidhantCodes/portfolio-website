@@ -1,6 +1,5 @@
-
 "use client"
-import { Hero, Paragraph, ProjectGrid, WorkExp } from "@/components"
+import { Hero, Paragraph, ProjectGrid, WorkExp, ContactMe, Achievements } from "@/components/index"
 import { aboutme } from "@/constants"
 const Home = () => {
     return (
@@ -10,7 +9,9 @@ const Home = () => {
         <Paragraph para={aboutme} />
       </div>
       <WorkExp />
+      <Achievements />
       <ProjectGrid />
+      <ContactMe />
     </div>
   )
 }

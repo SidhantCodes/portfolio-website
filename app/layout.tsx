@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
+import { TooltipProvider } from "@/components/ui/tooltip";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { FloatingIcon } from "@/components/index";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -53,8 +55,8 @@ const seoKeywords = [
 
 
 export const metadata: Metadata = {
-  title: "Sidhant Mishra | Web Developer",
-  description: "Sidhant Mishra is a pre-final year B.Tech student at VIT, specializing in Frontend Web Development, AI/ML, and Cloud Computing. Passionate about tech-driven impact, he enjoys solving complex problems and collaborating on innovative projects. Always eager to learn and contribute, he is driven to build meaningful solutions with like-minded professionals.",
+  title: "Sidhant Mishra | NextJs Developer | Python Developer",
+  description: "Sidhant Mishra is a final year B.Tech student at VIT, specializing in Frontend Web Development, AI/ML, and Cloud Computing. Passionate about tech-driven impact, he enjoys solving complex problems and collaborating on innovative projects. Always eager to learn and contribute, he is driven to build meaningful solutions with like-minded professionals.",
   keywords:  [
     "Sidhant",
     "Mishra",
@@ -113,8 +115,8 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Sidhant Mishra | Web Developer",
-    description: "Sidhant Mishra is a pre-final year B.Tech student at VIT, specializing in Frontend Web Development, AI/ML, and Cloud Computing. Passionate about tech-driven impact, he enjoys solving complex problems and collaborating on innovative projects. Always eager to learn and contribute, he is driven to build meaningful solutions with like-minded professionals.",
+    title: "Sidhant Mishra | NextJs Developer | Python Developer",
+    description: "Sidhant Mishra is a final year B.Tech student at VIT, specializing in Frontend Web Development, AI/ML, and Cloud Computing. Passionate about tech-driven impact, he enjoys solving complex problems and collaborating on innovative projects. Always eager to learn and contribute, he is driven to build meaningful solutions with like-minded professionals.",
     url: "https://www.sidhantmishra.tech/",
     siteName: "Sidhant Mishra",
     images: [
@@ -152,9 +154,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={outfit.className}>
-        <Navbar />
-        {children}
-        <Footer />
+        <TooltipProvider delayDuration={100}>
+          <Navbar />
+          {children}
+          <Footer />
+          <FloatingIcon />
+        </TooltipProvider>
       </body>
     </html>
   );

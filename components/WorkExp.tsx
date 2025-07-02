@@ -51,6 +51,22 @@ export function WorkExp() {
         </div>
       ),
     },
+    {
+      title: "Web Development Intern",
+      content: (
+        <div className="flex-col">
+          <p className="mb-8 text-xl md:text-3xl font-bold text-neutral-200">
+            OPYE
+          </p>
+          <p className="mb-8 text-md md:text-xl font-bold text-neutral-500">
+            [February 2024- July 2024]
+          </p>
+          <p className="my-5 text-xs font-normal md:text-sm text-neutral-200">
+            Engineered a high-performance web application using Next.js, strategically leveraging Server-Side Rendering (SSR) to achieve a 10% improvement in load times compared to traditional client-side frameworks such as React.js. Additionally, developed robust RESTful APIs utilizing Node.js and Express.js, facilitating efficient and seamless communication between the frontend and backend systems to enhance overall application responsiveness and user experience.
+          </p>
+        </div>
+      ),
+    },
   ];
   return (
     <div className="relative w-full overflow-clip" id="workex">

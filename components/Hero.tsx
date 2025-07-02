@@ -1,12 +1,41 @@
+"use client"
 import { BackgroundGradientAnimation } from "./ui/background-gradient-animation";
+import { useEffect, useState } from "react";
+
 const Hero = () => {
+  const [scrollOpacity, setScrollOpacity] = useState(1);
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id)
     element?.scrollIntoView({ behavior: "smooth" })
   }
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const heroHeight = window.innerHeight;
+      const fadeStart = heroHeight * 0.05;
+      const fadeEnd = heroHeight * 0.4;
+      
+      let opacity = 1;
+      if (scrollY > fadeStart) {
+        opacity = Math.max(0, 1 - (scrollY - fadeStart) / (fadeEnd - fadeStart));
+      }
+      
+      setScrollOpacity(opacity);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
 
-    <div id="home" className="flex flex-col items-center justify-center h-screen">
+    <div 
+      id="home" 
+      className="flex flex-col items-center justify-center h-screen"
+      style={{ opacity: scrollOpacity }}
+    >
       <div className="fixed top-0 left-0 w-full h-[200vh] z-[-1] pointer-events-none">
         <div className="w-full h-full bg-gradient-to-b" />
       </div>

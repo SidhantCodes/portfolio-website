@@ -1,8 +1,8 @@
 export const navlinks = [
-    {
-        name: 'Home',
-        url: 'home'
-    },
+    // {
+    //     name: 'Home',
+    //     url: 'home'
+    // },
     {
         name: 'About',
         url: 'about'
@@ -12,9 +12,17 @@ export const navlinks = [
         url: 'workex'
     },
     {
+        name: 'Achievements',
+        url: 'achievements'
+    },
+    {
         name: 'Projects',
         url: 'projects'
-    },    
+    },
+    {
+        name: 'Contact',
+        url: 'contact'
+    }    
 ]
 
 export const socials = [
@@ -54,7 +62,7 @@ export const projects = [
     {
         title: "paintnclick",
         desc: "Next.js PWA using Spotify, Dropbox, Gemini APIs for HD wallpapers and personality insights.",
-        image: "/images/pnc.svg",
+        image: "/images/pnc.webp",
         livelink: "https://www.paintnclick.art/",
         repolink: "none"
     },
@@ -68,40 +76,50 @@ export const projects = [
     {
         title: "imgify",
         desc: "Transform your imagination into stunning visuals and reality with Imgify.",
-        image: "/images/imgify.svg",
+        image: "/images/imgify.webp",
         livelink: "https://imgify-sidhant.vercel.app/",
         repolink: "https://github.com/SidhantCodes/imgify"
     },
     {
         title: "QueryDojo",
         desc: "Context-aware QA chatbot using Azure OpenAI, LangChain, memory, multimodal input.",
-        image: "/images/query.svg",
+        image: "/images/query.webp",
         livelink: "none",
         repolink: "https://github.com/SidhantCodes/QueryDojo"
     },
     {
         title: "create-fullstack-app",
         desc: "npx @sidhantcodes/create-fullstack-app@latest <PROJECT_NAME>",
-        image: "/images/cfa.svg",
+        image: "/images/fullstack.webp",
         livelink: "https://www.npmjs.com/package/@sidhantcodes/create-fullstack-app",
         repolink: "https://github.com/SidhantCodes/create-fullstack-app"
     },
     {
-        title: "auto-insta-bot",
+        title: "gramgateway",
         desc: "Instagram bot that processes images, auto-posts and sends DMs built with python",
-        image: "/images/auto-insta-bot.svg",
+        image: "/images/gatewaygram.webp",
         livelink: "none",
-        repolink: "https://github.com/SidhantCodes/auto-insta"
-    },
-    {
-        title: "portfolio-website",
-        desc: "Personal portfolio website showcasing projects, skills, and contact information.",
-        image: "/images/portfolio.svg",
-        livelink: "https://www.sidhantmishra.tech/",
-        repolink: "https://github.com/SidhantCodes/portfolio-website"
-    },
+        repolink: "https://github.com/SidhantCodes/gramgateway"
+    }
 ]
 
 
 
-export const aboutme = "I'm a pre-final year B.Tech IT student at VIT, passionate about Next.js and frontend development. I'm exploring cloud computing while also diving into data science and AI. I enjoy building projects, learning new technologies, and connecting with global communities—fluent in English, हिन्दी, Français, and Español."
+export const aboutme = "I'm a final year B.Tech IT student at VIT, passionate about Next.js and python development. I'm exploring cloud computing while also diving into data science and AI. I enjoy building projects, learning new technologies, and connecting with global communities—Trilingual: English, हिन्दी and Español."
+
+export const contactme = "I’m currently open to new opportunities and collaborations. Whether you have a question, a project in mind, or just want to say hello — feel free to reach out. I’ll get back to you as soon as I can."
+
+export const achievements = [
+    {
+        title: "AI-Based Montreal Cognitive Assessment (MoCA) System – Patent Application",
+        description:
+        "Filed and published Indian patent application for an Artificial Intelligence-based MoCA assessment system designed to evaluate cognitive function in subjects.",
+        link: "",
+    },
+    {
+        title: "2nd Place Winner | Synapse Hackathon (Yantra-2025)",
+        description:
+        "Developed an Intelligent cognitive assessment tool, enabling at-home assessment for dementia patients.",
+        link: "https://drive.google.com/file/d/1bFJm1USR832G_XLzPe367acD1QxndZXh/view",
+    }  
+];

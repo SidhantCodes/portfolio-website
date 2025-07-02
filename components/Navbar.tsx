@@ -5,7 +5,8 @@ import Link from "next/link"
 import { cn } from "@/utils/cn"
 import { navlinks, socials } from "@/constants";
 import Hamburger from "./Hamburger";
-import { renderIcon, scrollToSection } from "@/lib/utils";
+import { renderIcon, scrollToSection } from "@/lib/utilities";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip"
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -55,11 +56,18 @@ export default function Navbar() {
 
           <div className="flex items-center space-x-3 sm:space-x-4">
             {socials.map(item => (
-              <Link key={item.key} href={item.url} target="_blank" rel="noopener noreferrer" className="transition-colors">
-                {renderIcon(item.name,
-                  `text-white h-7 w-7  p-1 rounded-lg transition-all duration-300 ease-in-out hover:bg-white/20 hover:backdrop-blur-sm hover:shadow-md cursor-pointer
-                  `)}
-              </Link>
+              <Tooltip key={item.key}>
+                <TooltipTrigger>
+                  <Link href={item.url} target="_blank" rel="noopener noreferrer" className="transition-colors">
+                    {renderIcon(item.name,
+                      `text-white h-7 w-7  p-1 rounded-lg transition-all duration-300 ease-in-out hover:bg-white/20 hover:backdrop-blur-sm hover:shadow-md cursor-pointer
+                      `)}
+                  </Link>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>{item.key}</p>
+                </TooltipContent>
+              </Tooltip>
             ))}
           </div>
         </div>

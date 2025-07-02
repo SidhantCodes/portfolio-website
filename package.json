@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@octokit/core": "^6.1.2",
+    "@radix-ui/react-tooltip": "^1.2.7",
     "@tabler/icons-react": "^3.33.0",
+    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.18.2",
     "lucide-react": "^0.511.0",
@@ -19,7 +21,8 @@
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.5.0",
-    "tailwind-merge": "^2.6.0"
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",

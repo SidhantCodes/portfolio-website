@@ -15,7 +15,7 @@ interface ProjectCardProps {
 export function ProjectCard({ title, desc, image, livelink, repolink }: ProjectCardProps) {
   return (
     <CardContainer className="inter-var">
-      <CardBody className="relative group/card  hover:shadow-2xl hover:shadow-purple-400/[0.1] bg-black  border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+      <CardBody className="relative group/card  hover:shadow-2xl hover:shadow-purple-400/[0.1] bg-black w-auto sm:w-[30rem] h-auto rounded-xl p-6 border border-purple-950/70 ">
         <CardItem
           translateZ="50"
           className="text-xl font-bold text-white"
@@ -67,7 +67,7 @@ export function ProjectCard({ title, desc, image, livelink, repolink }: ProjectC
           ) : (
             <button
               disabled
-              className="linkTranslateZ px-4 py-2 rounded-xl bg-white text-black  text-xs font-bold opacity-50 cursor-not-allowed"
+              className="linkTranslateZ px-4 py-2 rounded-xl bg-white text-black text-xs font-bold opacity-50 cursor-not-allowed"
             >
               GitHub
             </button>

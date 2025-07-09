@@ -60,6 +60,13 @@ export const socials = [
 
 export const projects = [
     {
+        title: "cvgeany",
+        desc: "AI-powered FastAPI service that converts resumes into SEO optimized downloadable portfolio websites.",
+        image: "/images/cvgeany.webp",
+        livelink: "https://cvgeany.vercel.app/",
+        repolink: "https://github.com/SidhantCodes/cv-geany-agent"
+    },
+    {
         title: "paintnclick",
         desc: "Next.js PWA using Spotify, Dropbox, Gemini APIs for HD wallpapers and personality insights.",
         image: "/images/pnc.webp",
@@ -93,13 +100,6 @@ export const projects = [
         image: "/images/fullstack.webp",
         livelink: "https://www.npmjs.com/package/@sidhantcodes/create-fullstack-app",
         repolink: "https://github.com/SidhantCodes/create-fullstack-app"
-    },
-    {
-        title: "gramgateway",
-        desc: "Instagram bot that processes images, auto-posts and sends DMs built with python",
-        image: "/images/gatewaygram.webp",
-        livelink: "none",
-        repolink: "https://github.com/SidhantCodes/gramgateway"
     }
 ]
 

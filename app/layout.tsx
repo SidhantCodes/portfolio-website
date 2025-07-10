@@ -121,7 +121,7 @@ export const metadata: Metadata = {
     siteName: "Sidhant Mishra",
     images: [
       {
-        url: "/images/s.png",
+        url: "https://www.sidhantmishra.tech/images/s.png",
         width: 1024,
         height: 1024,
         alt: "Sidhant Mishra"
@@ -129,6 +129,13 @@ export const metadata: Metadata = {
     ],
     locale: "en_US",
     type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sidhant Mishra | NextJs Developer | Python Developer",
+    description: "Sidhant Mishra is a final year B.Tech student at VIT, specializing in Frontend Web Development, AI/ML, and Cloud Computing. Passionate about tech-driven impact, he enjoys solving complex problems and collaborating on innovative projects. Always eager to learn and contribute, he is driven to build meaningful solutions with like-minded professionals.",
+    images: ["https://www.sidhantmishra.tech/images/s.png"],
+    creator: "@TotallySidhant",
   },
   robots: {
     index: true,

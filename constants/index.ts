@@ -54,7 +54,7 @@ export const socials = [
     {
         name: 'Resume',
         key: 'resume',
-        url: 'https://drive.google.com/file/d/1x3j-7mDhmBBbeie99EatXHQpGy08WeQ8/view?usp=sharing'
+        url: 'https://drive.google.com/file/d/1YORPsE8peGA8MsDBe9_r3GmoKmJQnuV4/view?usp=sharing'
     }
 ]
 
